@@ -7,25 +7,33 @@
     <link rel="stylesheet" href="style.css">
 
     <link rel="shortcut icon" href="../assets/favicon.jpg" type="image/x-icon">
+    
     <title>BalleCoffe</title>
 </head>
 <body>
-    <nav>
-        <!-- Logo -->
-        <a href="index.html" class="titulo">BELLECOFFE</a>
+    <header>
+        <nav>
+            <!-- Logo -->
+            <a href="index.html"><span  class="titulo">bellecoffe</span></a>
 
-        <!-- Links de Navegação -->
-        <ul class="link">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Receitas</a></li>
-            <li><a href="#">Novidades</a></li>
-            <li><a href="#">Melhor Avaliados</h3></a></li>
-        </ul>
+            <!-- Links de Navegação -->
+            <ul class="menu" id="menuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Receitas</a></li>
+                <li><a href="#">Novidades</a></li>
+                <li><a href="#">Melhor Avaliados</h3></a></li>
+            </ul>
 
-        <!-- Redirecionar Git -->
+            <!-- Redirecionar Git -->
 
-        <a href="https://github.com/mitsuTanak" class="github">GitHub</a>
-    </nav>
+            <a href="https://github.com/mitsuTanak" class="github">GitHub</a>
+        
+            <!-- Menu para telas menores -->
+            <img src="../assets/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
+        </nav>
     
+    </header>
+
+    <script src="../efeitos.js"></script>
 </body>
 </html>

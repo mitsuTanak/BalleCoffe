@@ -29,52 +29,115 @@ a{
 /* NavBar Style */
 
 nav{
-    padding: 10px;
+    max-width: 1120px;
+    margin: auto;
+
+    padding: 1.5rem 10rem;
 
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 
     align-items: center;
-    justify-content: space-between;
 
     background-color: #1F1517;
 }
 
-.titulo{
-    font-family: 'Teko';
-    font-size: 36px;
-    font-weight: bold;
 
-    color: #fff;
+/* "Logo" */
+
+.titulo{
+    font-family: 'Teko', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    
+    text-transform: uppercase;
+
+    color: #fff
 }
 
-.link{
+
+/* Menu hamburguer */
+
+.menu-toggle{
+    display: none;
+    cursor: pointer;
+}
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+
+/* Menu normal */
+
+.menu{
     display: flex;
     flex-direction: row;
+
+    color: #fff2e7;
+
+    gap: 24px;
+    margin-top: 9px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
-.link li a{
-    display: flex;
-    padding: 15px;
-
-    font-family: 'Inter';
-    font-size: 16px;
-    font-weight: bold;
-
+.menu a{
     color: #fff2e7;
     opacity: 50%; 
 }
-.link li a:hover{
+.menu li a:hover{
     transition: 0.5s;
     opacity: 100%;
 }
 
 .github{
-
-    font-family: 'Inter';
-    font-size: 16px;
-    font-weight: bold;
-
     color: #fff2e7;
- 
+    font-weight: bold;
+}
+
+.github:hover{
+    color: #a45a49;
+}
+
+
+/* Responsividade */
+
+@media screen and (max-width: 768px) {
+    
+    /* Header */
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        z-index: 9;
+    }
+    nav ul li{
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .menu{
+        margin-left: 0;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        margin-right: -70px;
+    }
+    .github{
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    .titulo{
+        margin-left: -100px;
+    }
 }

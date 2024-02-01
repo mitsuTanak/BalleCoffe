@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Teko&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+nav{
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #1F1517;
+}
+
+.titulo{
+    font-family: 'Teko';
+    font-size: 32px;
+    font-weight: bold;
+
+    color: #fff;
+}
+
+.link{
+    display: flex;
+    flex-direction: row;
+}
+
+.link li a{
+    display: flex;
+    padding: 15px;
+
+    font-family: 'Inter';
+
+    color: #fff2e787; 
+}
+.link li a:hover{
+    
+    color: #fff2e7;
+}
+

@@ -1,8 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Inter:wght@600&family=Montserrat:wght@800&family=Teko:wght@600&display=swap');
 
+/* Configurações Gerais */
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #241A1C;
+    color: #fff;
+}
+
+html{
+    font-family: Inter, 'sans-serif';
+    font-weight: 600;
 }
 
 ul{
@@ -11,8 +23,10 @@ ul{
 
 a{
     text-decoration: none;
-    
 }
+
+
+/* NavBar Style */
 
 nav{
     padding: 10px;
@@ -28,7 +42,7 @@ nav{
 
 .titulo{
     font-family: 'Teko';
-    font-size: 32px;
+    font-size: 36px;
     font-weight: bold;
 
     color: #fff;
@@ -44,11 +58,23 @@ nav{
     padding: 15px;
 
     font-family: 'Inter';
+    font-size: 16px;
+    font-weight: bold;
 
-    color: #fff2e787; 
+    color: #fff2e7;
+    opacity: 50%; 
 }
 .link li a:hover{
-    
-    color: #fff2e7;
+    transition: 0.5s;
+    opacity: 100%;
 }
 
+.github{
+
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: bold;
+
+    color: #fff2e7;
+ 
+}

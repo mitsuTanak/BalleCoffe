@@ -275,20 +275,118 @@ button:hover{
 
 .receitas{
     max-width: 1120px;
+    padding: 3rem 2rem;
+    padding-top: 10px;
+    margin: auto;
+    
     display: flex;
-    gap: 6rem;
-    padding: 0rem 2rem;
-    margin-left: 200px;
+    flex-direction: column;
 }
 
 .contentReceitas{
+    gap: 0.5rem;
+
     display: flex;
     flex-direction: column;
-    gap: 1rem;
 }
 
-.receitas .UReceitas{
-    font-size: 32px;
-    font-weight: bold;
+.U-Receitas{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff2e7;
 
+}
+
+.subtitle-R{
+    color: #c7bab3;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 400;
+
+    margin-bottom: 1rem;
+}
+
+article{
+    padding-top: 30px;
+    column-count: 2;
+}
+
+.publicacoes{
+    border-radius: 8px;
+    margin-bottom: -3rem;
+}
+
+.card{
+    background: #241A1C;
+    
+    display: flex;
+    flex-direction: column;
+    
+    padding: 2rem;
+    margin-bottom: 25px;
+    border-radius: 0.5rem;
+    gap: 2rem;
+    flex-basis: 29rem;
+}
+
+.C-Header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.legend{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 0.5rem;
+}
+
+.R-Nome{
+    color: #fff2e7;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.avaliacao{
+    color: #756a67;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.descricao{
+    color: #c7bab3;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.author{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 0.5rem;
+}
+
+.author > img{
+    border-radius: 20rem;
+    width: 1.5rem;
+}
+
+.name{
+    color: #c7bab3;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
 }
